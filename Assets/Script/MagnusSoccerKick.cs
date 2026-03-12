@@ -22,7 +22,7 @@ public class MagnusSoccerKick : MonoBehaviour
         {
             rb.AddForce(Vector3.forward * kickForce , ForceMode.Impulse);
 
-            rb.AddTorque(Vector3.up * spinAmout);
+            rb.AddTorque(-Vector3.up * spinAmout );
 
             isShot = true;
         }
